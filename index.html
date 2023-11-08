@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>NaturezaViva</title>
+</head>
+
+<body>
+
+    <nav>
+        
+
+        <h1 class="nomeProjeto">
+            NaturezaViva
+        </h1>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="https://images.vexels.com/media/users/3/142904/isolated/preview/b328ffdd1c50214fdfac8a447e74c5f8-logotipo-do-circulo-da-planta.png">
+            </a>
+        </div>
+        <button class="btn">Entrar</button>
+        <button class="btn">Cadastrar Produto</button>
+
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeLoginModal">&times;</span>
+              <form id="loginForm" class="modal-form">
+                <h2>Entrar</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <button type="submit">Entrar</button>
+              </form>
+            </div>
+          </div>
+          
+          <div id="cadastroProdutoModal" class="modal">
+            <div class="modal-content">
+              <span class="close" id="closeCadastroProdutoModal">&times;</span>
+              <form id="cadastroProdutoForm" class="modal-form">
+                <h2>Cadastrar Produto</h2>
+                <label for="id_produtonatureza">ID do Produto:</label>
+                <input type="text" id="id_produtonatureza" name="id_produtonatureza" required>
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required>
+                <label for="dataValidade">Data de Validade:</label>
+                <input type="date" id="dataValidade" name="dataValidade" required>
+                <label for="quantidadeEstoque">Quantidade em Estoque:</label>
+                <input type="number" id="quantidadeEstoque" name="quantidadeEstoque" required>
+                <button type="submit">Cadastrar Produto</button>
+              </form>
+            </div>
+          </div>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <H1>Conheça<span> mais sobre a </span>NarurezaViva</H1>
+            <p>
+                Bem-vindo ao NaturezaViva, um site dedicado a celebrar e promover a conexão com a beleza da natureza que nos cerca. 
+                Nossa plataforma é um refúgio virtual para todos os amantes da natureza, exploradores, ambientalistas e aqueles que desejam apreciar a diversidade do nosso planeta.
+            </p>
+        </div>
+        <div class="image">
+            <img src="https://static.wikia.nocookie.net/b2c4b50b-4a2c-4b7e-b900-03b8b9d908af/scale-to-width/755">
+        </div>
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel de Imagens</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-slide {
+            display: none;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-slide:first-child {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-slide">
+            <img src="https://img.freepik.com/fotos-gratis/bela-paisagem-de-um-rio-cercado-por-muito-verde-em-uma-floresta_181624-40482.jpg" alt="Imagem 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="https://img.freepik.com/fotos-gratis/flores-roxas-com-uma-bela-vista-da-ilha-da-madeira-em-portugal_181624-27202.jpg" alt="Imagem 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="https://img.freepik.com/fotos-gratis/arvore-com-o-sol-logo-atras-em-um-campo-verde_1259-1.jpg" alt="Imagem 3">
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.carousel-slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides[currentSlide].style.display = 'none';
+            slides[index].style.display = 'block';
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            const next = (currentSlide + 1) % slides.length;
+            showSlide(next);
+        }
+
+        function prevSlide() {
+            const prev = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(prev);
+        }
+
+        setInterval(nextSlide, 3000); // Altera automaticamente as imagens a cada 3 segundos
+    </script>
+</body>
+</html>
+
+    </header>
+    <section class="container">
+        <h2 class="header">Produtos</h2>
+        <div class="pricing">
+            <div class="card">
+                <div class="content">
+                    <h4>Pé de Manga</h4>
+                    <h3>15$</h3>
+                    <p>
+                        Um símbolo de exuberância tropical, o pé de manga oferece sombra generosa e frutas suculentas. 
+                        Desfrute de uma explosão de sabor doce e refrescante em seu próprio jardim. 
+                    </p>
+                </div>
+                <button class="btn">Compre Aqui</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Pau Brasil</h4>
+                    <h3>10,000$</h3>
+                    <p>
+                        Conhecida como a "árvore da tintura", a madeira de pau-brasil é apreciada por sua beleza e pigmentos naturais. 
+                        Adicione um toque de elegância natural aos seus projetos de artesanato e decoração.
+                    </p>
+                </div>
+                <button class="btn">Compre Aqui</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Flor de Lítus</h4>
+                    <h3>100$</h3>
+                    <p>
+                        A flor de lótus simboliza pureza e renovação espiritual. Sua beleza serena e elegante é um lembrete constante da serenidade que a natureza oferece. 
+                        Adorne seu espaço com esta flor sagrada. 
+                    </p>
+                </div>
+                <button class="btn">Compre Aqui</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="https://images.vexels.com/media/users/3/142904/isolated/preview/b328ffdd1c50214fdfac8a447e74c5f8-logotipo-do-circulo-da-planta.png">
+            </div>
+            <p>
+                ajude a gente, e nos siga nas nossas redes sociais
+            </p>
+            <div class="socials">
+                <a href="#"><i class="ri-youtube-line"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Empresa</h4>
+            <a href="#">Trabalhos</a>
+            <a href="#">Parcerias</a>
+            <a href="#">Rede</a>
+        </div>
+        <div class="column">
+            <h4>Sobre nós</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Canais</a>
+            <a href="#">Patrocinadores</a>
+        </div>
+        <div class="column">
+            <h4>Contato</h4>
+            <a href="#">Entre em contato</a>
+            <a href="#">Politica de privacidade</a>
+            <a href="#">Termos e condições</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

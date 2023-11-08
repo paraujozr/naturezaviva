@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>NaturezaViva</title>
+</head>
+<body>
+
+<nav>
+    <h1 class="nomeProjeto">NaturezaViva</h1>
+    <div class="nav-logo">
+        <a href="#">
+            <img src="https://images.vexels.com/media/users/3/142904/isolated/preview/b328ffdd1c50214fdfac8a447e74c5f8-logotipo-do-circulo-da-planta.png">
+        </a>
+    </div>
+   
+    <button class="btn" data-toggle="modal" data-target="#loginModal">Entrar</button>
+    
+    <button class="btn" data-toggle="modal" data-target="#cadastroProdutoModal">Cadastrar Produto</button>
+</nav>
+
+<header class="container">
+    
+</header>
+
+<section class="container">
+    
+</section>
+
+<footer class="container">
+    
+</footer>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Faça Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <form>
+                    <div class="form-group">
+                        <label for="loginEmail">Email:</label>
+                        <input type="email" class="form-control" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Senha:</label>
+                        <input type="password" class="form-control" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="cadastroProdutoModal" tabindex="-1" role="dialog" aria-labelledby="cadastroProdutoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cadastroProdutoModalLabel">Cadastro de Produto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               
+                <form>
+                    <div class="form-group">
+                        <label for="produtoId">ID do Produto:</label>
+                        <input type="text" class="form-control" id="produtoId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="produtoDescricao">Descrição:</label>
+                        <input type="text" class="form-control" id="produtoDescricao" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="produtoMarca">Marca:</label>
+                        <input type="text" class="form-control" id="produtoMarca" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="produtoDataValidade">Data de Validade:</label>
+                        <input type="date" class="form-control" id="produtoDataValidade" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="produtoQuantidade">Quantidade em Estoque:</label>
+                        <input type="number" class="form-control" id="produtoQuantidade" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar Produto</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
